@@ -229,7 +229,7 @@ class OAuth
         $uri     = '/api/1.0/token';
 
         if (empty($vendUrl)) {
-            $url = 'https://' . $domainPrefix . '.vendhq.com' . $uri;
+            $url = 'https://' . $domainPrefix . '.retail.lightspeed.app' . $uri;
         }
         else {
             $url = rtrim($vendUrl, '/') . $uri;
