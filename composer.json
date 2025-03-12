@@ -1,20 +1,39 @@
 {
-  "name": "shoppinpal/vend-api",
-  "description": "Library to use Vend's API",
+  "name": "kashper13/lightspeed-api",  
+  "description": "Library to use Lightspeed Retail API (forked from shoppinpal/vend-api)",
   "minimum-stability": "stable",
-  "license": "GPL-2.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kashmeer Jamirie",
+      "email": "kjamirie@gmail.com",
+      "homepage": "https://github.com/kashper13",
+      "role": "Developer"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "ShoppinPal\\Vend\\": "src/ShoppinPal/Vend"
     }
   },
   "require": {
-    "php":               ">=7.1",
-    "ext-curl":          "*",
+    "php": ">=7.1",
+    "ext-curl": "*",
     "szeber/yapep_base": "0.3.x-dev",
     "ext-json": "*"
   },
   "require-dev": {
-    "phpunit/phpunit":   "^7.1"
+    "phpunit/phpunit": "^7.1"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/kashper13/vend-php-api"
+    }
+  ],
+  "extra": {
+    "branch-alias": {
+      "dev-main": "1.0-dev"
+    }
   }
 }
