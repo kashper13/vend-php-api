@@ -56,7 +56,7 @@ class OAuth
      */
     public function getAuthorisationRedirectUrl($state)
     {
-        $baseUrl = 'https://secure.vendhq.com/connect';
+        $baseUrl = 'https://lightspeed.app/oath/authorize';
         $params  = [
             'response_type' => 'code',
             'client_id'     => $this->clientId,
